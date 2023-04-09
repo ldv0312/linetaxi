@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+  width: 90%;
+  color: #222531;
+}
+.box {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.the_main-section {
+  display: flow-root;
+  box-sizing: content-box;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-one {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  margin: 0;
+  padding: 0;
+}
+.title-right-image img {
+  width: 110%;
+  height: 350px;
+  border-radius: 15px;
+}
+.title-left {
+  width: 55%;
+  font-family: "open sans";
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: left;
+}
+.registr-buttom {
+  margin-top: 35px;
+  width: 350px;
+  height: 60px;
+  border-radius: 500px;
+  border: none;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #f8c100;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-align: center;
+  text-decoration: none;
+  font-family: "Open Sans";
+}
+.the_first_main_section {
+  max-width: 1700%;
+  margin: 0 auto;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+.category {
+  margin-top: 3%;
+  margin-bottom: 1%;
+  height: 600px;
+  background-color: #f4f1ff;
+  padding: 50px 40px;
+  border-radius: 30px;
+}
+.main_category {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main_category-two {
+  padding-top: 8%;
+  padding-left: 6%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.h21 {
+  font-size: 80px;
+  line-height: 120px;
+}
+.p21 {
+  font-size: 30px;
+  width: 95%;
+}
+.p22 {
+  font-size: 27px;
+}
+.p23 {
+  width: 85%;
+  font-size: 27px;
+  padding-left: 15%;
+}
+.kom {
+  align-items: center;
+  text-align: center;
+}
+.kruglot {
+  margin-left: 5%;
+  align-items: center;
+  text-align: center;
+}
+/*  */
+.image_part {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.image_part img {
+  border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .section-one {
+    flex-wrap: wrap;
+  }
+  .asd {
+    font-size: 30px;
+    width: 150%;
+  }
+  .registr-buttom {
+    width: 270px;
+    height: 48px;
+    margin-bottom: 5%;
+  }
+  .image_part {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
