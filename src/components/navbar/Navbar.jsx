@@ -27,17 +27,17 @@ function Navbar() {
           </a>
         </li>
         <li className="nav__item">
-          <a href="/" className="nav__link">
+          <a href="/passengers" className="nav__link">
             Пассажирам
           </a>
         </li>
         <li className="nav__item">
-          <a href="/" className="nav__link">
-            Акции
+          <a href="/conditions" className="nav__link">
+            Условия
           </a>
         </li>
         <li className="nav__item">
-          <a href="/" className="nav__link">
+          <a href="/contacts" className="nav__link">
             Контакты
           </a>
         </li>
