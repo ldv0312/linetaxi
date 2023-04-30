@@ -18,8 +18,8 @@ const Home = () => {
                 </span>{" "}
                 крупнейший официальный партнер Яндекс Go с самыми выгодными
                 условиями на рынке такси!
+                <button className="registr-buttom">Связаться с нами</button>
               </div>
-              <button className="registr-buttom">Связаться с нами</button>
             </div>
             <div className="title-right-image">
               <img src={taxi} alt="" />
