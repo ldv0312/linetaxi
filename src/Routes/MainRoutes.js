@@ -2,11 +2,13 @@ import React from "react";
 import HomePage from "../Pages/HomePage";
 import { Route, Routes } from "react-router-dom";
 import Contacts from "../components/Contacts/Contacts";
+import Pasaj from "../components/Pasaj/Pasaj";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
     { link: "/", Element: <HomePage />, id: 1 },
     { link: "/contacts", Element: <Contacts />, id: 2 },
+    { link: "/pasaj", Element: <Pasaj />, id: 2 },
   ];
   return (
     <>
