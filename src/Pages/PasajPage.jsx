@@ -8,3 +8,5 @@ const PasajPage = () => {
     </div>
   );
 };
+
+export default PasajPage;

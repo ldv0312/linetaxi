@@ -4,8 +4,10 @@ import taxi from "../../image/NAT_181211-Oneroad-Taxi-(Read-Only)_resources1_16a
 import phone from "../../image/smartphone_PNG101502.png";
 import ogo from "../../image/fire.svg";
 import taxi1from from "../../image/qa3e0683136c5ie96u33s.png";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="container">
       <div className="box">
@@ -18,7 +20,12 @@ const Home = () => {
                 </span>{" "}
                 крупнейший официальный партнер Яндекс Go с самыми выгодными
                 условиями на рынке такси!
-                <button className="registr-buttom">Связаться с нами</button>
+                <button
+                  onClick={() => navigate("/contacts")}
+                  className="registr-buttom"
+                >
+                  Связаться с нами
+                </button>
               </div>
             </div>
             <div className="title-right-image">
@@ -52,7 +59,12 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <button className="registr-buttom">Связаться с нами</button>
+          <button
+            onClick={() => navigate("/contacts")}
+            className="registr-buttom"
+          >
+            Связаться с нами
+          </button>
         </div>
         <div className="the_second_main_section">
           <h1>Наши водители</h1>

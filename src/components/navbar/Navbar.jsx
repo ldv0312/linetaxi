@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import forn from "../../image/forn.jpg";
 import "../navbar/navbar.scss";
-
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
   const [toggleIcon, setToggleIcon] = useState("nav__toggler");
@@ -17,8 +17,8 @@ function Navbar() {
 
   return (
     <nav className="nav">
-      <a href="/" className="brand">
-        LOGO
+      <a style={{ width: "36%" }} href="/" className="brand">
+        <img style={{ width: "10%", height: "10%" }} src={forn} alt="" />
       </a>
       <ul className={active}>
         <li className="nav__item">
@@ -32,7 +32,7 @@ function Navbar() {
           </a>
         </li>
         <li className="nav__item">
-          <a href="/conditions" className="nav__link">
+          <a href="/uslov" className="nav__link">
             Условия
           </a>
         </li>
