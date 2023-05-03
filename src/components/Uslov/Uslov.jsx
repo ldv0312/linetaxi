@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./uslov.css";
 import { useNavigate } from "react-router-dom";
 
@@ -16,7 +16,12 @@ const Uslov = () => {
               add the client base
             </button>
           </div>
-          <div className="the_just_for_cards"></div>
+          <div className="the_just_for_cards">
+            <div
+              style={{ display: "flex", justifyContent: "space-arounds" }}
+              className="add-item"
+            ></div>
+          </div>
         </div>
       </div>
     </>

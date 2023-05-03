@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 const AddUslov = () => {
   const navigate = useNavigate();
   const { addProduct } = useProducts();
+
   const [product, setProduct] = useState({
     name: "",
     phote: "",
@@ -22,8 +23,14 @@ const AddUslov = () => {
   return (
     <div className="adduslov">
       <div className="add">
-        <input onChange={handleInp} type="text" placeholder="-- add number" />
         <input
+          name="phote"
+          onChange={handleInp}
+          type="text"
+          placeholder="-- add number"
+        />
+        <input
+          name="name"
           onChange={handleInp}
           type="text"
           placeholder="-- add your name"
@@ -31,7 +38,7 @@ const AddUslov = () => {
         <button
           onClick={() => {
             addProduct(product);
-            navigate("/uslov");
+            navigate("/Uslovlist");
           }}
         >
           add +

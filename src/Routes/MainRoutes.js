@@ -13,6 +13,7 @@ const MainRoutes = () => {
     { link: "/pasaj", Element: <PasajPage />, id: 3 },
     { link: "/uslov", Element: <UslovPage />, id: 4 },
     { link: "/addUslov", Element: <AddUslovPage />, id: 5 },
+    { link: "/Uslovlist", Element: <AddUslovPage />, id: 6 },
   ];
   return (
     <>
