@@ -1,0 +1,41 @@
+.uslov {
+  max-width: 1600%;
+  width: 90%;
+  margin: 0 auto;
+}
+.uslov-main {
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+.for-add {
+  text-align: center;
+}
+.addButton {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(215, 138, 138);
+}
+.add {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5%;
+  align-items: center;
+}
+.add input {
+  margin-top: 1%;
+  width: 40%;
+  height: 45px;
+  border-radius: 15px;
+  border: 1.5px solid black;
+}
+
+.add button {
+  color: white;
+  font-size: 20px;
+  background-color: orange;
+  margin-top: 2%;
+  width: 40%;
+  height: 45px;
+  border-radius: 15px;
+  border: 1.5px solid black;
+}

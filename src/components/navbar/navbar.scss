@@ -31,7 +31,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 15vh;
+  height: 13vh;
   background: #000;
   .brand {
     text-transform: uppercase;
@@ -43,7 +43,9 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 3rem;
+    gap: 2rem;
+    position: relative;
+    right: 18%;
   }
   .nav__toggler div {
     width: 2.5rem;

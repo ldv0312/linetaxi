@@ -1,16 +1,13 @@
 import React from "react";
 import "./Footer.css";
-
+import a from "../../image/a.jpg";
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-flow">
         <div className="main-footer">
           <div className="for-image">
-            <img
-              src="https://yapartner-taxi.kg/wp-content/uploads/footer-logo-1.svg"
-              alt=""
-            />
+            {/* <img style={{ width: "30%" }} src={a} alt="" /> */}
           </div>
           <div className="for-title">
             <ul className="ul">
