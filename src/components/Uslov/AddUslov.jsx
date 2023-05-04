@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import "./uslov.css";
 import { useProducts } from "../../context/ProductContextProvider";
 import { useNavigate } from "react-router-dom";
+import UslovList from "./UslovList";
 const AddUslov = () => {
-  const navigate = useNavigate();
   const { addProduct } = useProducts();
+  const navigate = useNavigate();
 
   const [product, setProduct] = useState({
     name: "",
-    phote: "",
+    picture: "",
   });
 
   const handleInp = (e) => {
@@ -24,15 +25,15 @@ const AddUslov = () => {
     <div className="adduslov">
       <div className="add">
         <input
-          name="phote"
+          name="name"
           onChange={handleInp}
           type="text"
           placeholder="-- add number"
         />
         <input
-          name="name"
+          name="picture"
           onChange={handleInp}
-          type="text"
+          type="picture"
           placeholder="-- add your name"
         />
         <button
@@ -44,6 +45,7 @@ const AddUslov = () => {
           add +
         </button>
       </div>
+      <UslovList />
     </div>
   );
 };

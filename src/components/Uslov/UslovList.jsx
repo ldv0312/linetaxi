@@ -2,20 +2,20 @@ import React, { useEffect } from "react";
 import { useProducts } from "../../context/ProductContextProvider";
 import UslovCard from "./UslovCard";
 
-const UslovList = ({ currentData }) => {
-  const [products, getProducts] = useProducts();
+const UslovList = () => {
+  const { products, getProducts } = useProducts();
 
   useEffect(() => {
     getProducts();
   }, []);
   return (
-    <div style={{ display: "flex" }}>
-      <div>asd</div>
+    <div style={{ display: "flex", justifyContent: "space-around" }}>
       {products ? (
-        currentData().map((item) => <UslovCard key={item.id} item={item} />)
+        products.map((item) => <UslovCard key={item.id} item={item} />)
       ) : (
         <></>
       )}
     </div>
   );
 };
+export default UslovList;
