@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./uslov.css";
 import { useProducts } from "../../context/ProductContextProvider";
 import { useNavigate } from "react-router-dom";
-import UslovList from "./UslovList";
+// import UslovList from "./UslovList";
 const AddUslov = () => {
   const { addProduct } = useProducts();
   const navigate = useNavigate();
@@ -39,13 +39,12 @@ const AddUslov = () => {
         <button
           onClick={() => {
             addProduct(product);
-            navigate("/Uslovlist");
+            navigate("/uslov");
           }}
         >
           add +
         </button>
       </div>
-      <UslovList />
     </div>
   );
 };
