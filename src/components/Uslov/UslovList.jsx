@@ -9,7 +9,13 @@ const UslovList = () => {
     getProducts();
   }, []);
   return (
-    <div style={{ display: "flex", justifyContent: "space-around" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-around",
+        flexWrap: "wrap",
+      }}
+    >
       {products ? (
         products.map((item) => <UslovCard key={item.id} item={item} />)
       ) : (

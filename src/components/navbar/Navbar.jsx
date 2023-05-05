@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import forn from "../../image/forn.jpg";
 import "../navbar/navbar.scss";
+import { useNavigate } from "react-router-dom";
 function Navbar() {
+  const navigate = useNavigate();
   const [active, setActive] = useState("nav__menu");
   const [toggleIcon, setToggleIcon] = useState("nav__toggler");
 
@@ -42,6 +44,18 @@ function Navbar() {
           </a>
         </li>
       </ul>
+      <a
+        onClick={() => navigate("/auth")}
+        style={{ position: "relative", left: "11%" }}
+        href=""
+      >
+        <img
+          style={{ width: "18%" }}
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMo9Y9lsTTWAuXxJl_C7kqsiCuIKLMaVL1bA9zaVU&s"
+          alt=""
+        />
+      </a>
+
       <div onClick={navToggle} className={toggleIcon}>
         <div className="line1"></div>
         <div className="line2"></div>
